@@ -5,6 +5,6 @@ from loader import dp
 
 
 @dp.message_handler(CommandStart())
-async def bot_start(msg: types.Message) -> None:
-    User.get_or_create(id=msg.from_user.id)
+async def bot_start(msg: types.Message, user: User) -> None:
+    print(user.id)
     await msg.answer(f"👋 Привет, {msg.from_user.first_name}")
