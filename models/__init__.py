@@ -1,3 +1,3 @@
-from . import user
+from .user import User
 
-user.User.create_table()
+User.create_table()
