@@ -8,9 +8,10 @@
 <h2>Запуск бота</h2>
 Через консоль линукс:<br>
 
-`pip3 install -r requirements.txt`<br>
+`pip3 install -r requirements.txt` (устанвока необходимых модулей) <br>
 `python3 bot.py`
 
 Через Docker:<br>
+
 `chmod +x runbot.sh` (команда вводится один раз, в последующие запуски ее можно не вводить)<br>
 `./runbot.sh` (подготовка и запуск контейнера с ботом)
