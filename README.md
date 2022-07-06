@@ -8,7 +8,7 @@
 <h2>Запуск бота</h2>
 Через консоль линукс:<br>
 
-`pip3 install -r requirements.txt` (устанвока необходимых модулей) <br>
+`pip3 install -r requirements.txt` (установка необходимых модулей) <br>
 `python3 bot.py`
 
 Через Docker:<br>
