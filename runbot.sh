@@ -1,3 +1,8 @@
+#!/usr/bin/env sh
+
+# abort on errors
+set -e
+
 if [[ $(docker images | grep aiogram-template) ]]; then
     echo "[ + ] Docker image exists"
 else
