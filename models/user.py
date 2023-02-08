@@ -4,8 +4,8 @@ from datetime import datetime
 
 
 class User(Model):
-    id = IntegerField(primary_key=True, null=False, index=True, unique=True)
-    username = CharField(max_length=100, null=True)
+    id = BigIntegerField(primary_key=True, null=False, index=True, unique=True)
+    username = CharField(max_length=32, null=True)
     created_at = DateTimeField(default=datetime.now)
 
     class Meta:
