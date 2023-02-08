@@ -7,6 +7,7 @@
 
 Чтобы перевести бота на mysql, укажите в .env:
 
+`DBtype=mysql`<br>
 `mysqlDatabase=name`<br>
 `mysqlUser=admin`<br>
 `mysqlPassword=12345678`
