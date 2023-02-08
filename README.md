@@ -5,6 +5,12 @@
 `botToken=123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZ`<br>
 `admins=123456789,987654321,111111111`
 
+Чтобы перевести бота на mysql, укажите в .env:
+
+`mysqlDatabase=name`<br>
+`mysqlUser=admin`<br>
+`mysqlPassword=12345678`
+
 <h2>Запуск бота</h2>
 Через терминал линукс:<br>
 
