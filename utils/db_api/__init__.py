@@ -1,2 +1,8 @@
-from .sqlite import db # comment this while use mysql
-# from .mysql import db
+from dotenv import load_dotenv
+
+load_dotenv()
+
+if getenv('DBtype') == 'mysql':
+  from .mysql import db
+else:
+  from .sqlite import db
