@@ -1,3 +1,5 @@
 aiogram==2.20
 peewee==3.15.0
 python-dotenv==0.20.0
+pymysql
+cryptography
