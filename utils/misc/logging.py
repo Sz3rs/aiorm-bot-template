@@ -2,6 +2,6 @@ import logging
 
 logging.basicConfig(format=u'%(message)s',
                     level=logging.INFO,
-                    filename='logs.txt',
-                    filemode='a'
+                    #filename='logs.txt',
+                    #filemode='a'
                     )
