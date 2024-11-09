@@ -30,19 +30,36 @@ async def bot_start(msg: types.Message, user: User) -> None:
 `mysqlPassword=12345678`
 
 <h2>Запуск бота</h2>
-Через терминал линукс:<br>
+<h3>Через терминал линукс:</h3>
+Установка необходимых модулей:<br><br>
 
-`pip3 install -r requirements.txt` (установка необходимых модулей) <br>
-`python3 bot.py`
+```shell
+pip3 install -r requirements.txt 
+```
+Запуск бота:<br>
 
-Через Docker:<br>
-`chmod +x runbot.sh` (команда вводится один раз, в последующие запуски ее можно не вводить)<br>
-`./runbot.sh` (подготовка и запуск контейнера с ботом)
+```shell
+python3 bot.py
+```
+
+<h3>Через Docker</h3>
+Выдаем права на исполнение (команда выполняется один раз, в последующие запуски ее можно не вводить:<br><br>
+
+```shell
+chmod +x runbot.sh
+```
+
+Подготовка и запуск контейнера с ботом:<br>
+```shell
+./runbot.sh
+```
 
 <h2>Добавление новых колонок</h2>
 Если вам понадобится добавить в таблицу Peewee новую колонку, то используйте migrator.py.
 Его нужно запустить отдельно:<br>
 
-`python3 migrator.py`
+```shell
+python3 migrator.py
+```
 
 
