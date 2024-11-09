@@ -19,38 +19,40 @@ async def bot_start(msg: types.Message, user: User) -> None:
 <h2>Настройка</h2>
 Укажите в файле .env токен от бота и список ID администраторов:
 
-`botToken=123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZ`<br>
-`admins=123456789,987654321,111111111`
+```env
+botToken=123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZ
+admins=123456789,987654321,111111111
+```
 
 Чтобы перевести бота на mysql, укажите в .env:
-
-`DBtype=mysql`<br>
-`mysqlDatabase=name`<br>
-`mysqlUser=admin`<br>
-`mysqlPassword=12345678`
-
+```env
+DBtype=mysql
+mysqlDatabase=name
+mysqlUser=admin
+mysqlPassword=12345678
+```
 <h2>Запуск бота</h2>
 <h3>Через терминал линукс:</h3>
 Установка необходимых модулей:<br><br>
 
-```shell
+```bash
 pip3 install -r requirements.txt 
 ```
 Запуск бота:<br>
 
-```shell
+```bash
 python3 bot.py
 ```
 
 <h3>Через Docker</h3>
 Выдаем права на исполнение (команда выполняется один раз, в последующие запуски ее можно не вводить:<br><br>
 
-```shell
+```bash
 chmod +x runbot.sh
 ```
 
 Подготовка и запуск контейнера с ботом:<br>
-```shell
+```bash
 ./runbot.sh
 ```
 
@@ -58,7 +60,7 @@ chmod +x runbot.sh
 Если вам понадобится добавить в таблицу Peewee новую колонку, то используйте migrator.py.
 Его нужно запустить отдельно:<br>
 
-```shell
+```bash
 python3 migrator.py
 ```
 
