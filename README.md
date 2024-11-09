@@ -25,6 +25,7 @@ admins=123456789,987654321,111111111
 ```
 
 Чтобы перевести бота на mysql, укажите в .env:
+
 ```env
 DBtype=mysql
 mysqlDatabase=name
