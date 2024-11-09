@@ -17,6 +17,7 @@ async def bot_start(msg: types.Message, user: User) -> None:
 ```
 
 <h2>Настройка</h2>
+
 Укажите в файле .env токен от бота и список ID администраторов:
 
 ```env
