@@ -51,7 +51,10 @@ except OperationalError as e:
     column = getattr(model_class, missing_variable)
 
     full_query: str
-    full_query = str(SchemaManager(model_class)._create_table().query())
+    full_query = str(SchemaManager(model_class)._create_table().query()[0])
+    end = ''
+    if full_query[-1] == ')':
+        full_query = full_query[:-1]
 
     query = full_query.split(f'"{missing_variable}"')[1].split(',')[0]
     query = missing_variable + query
@@ -72,6 +75,7 @@ except OperationalError as e:
         default_column += 'NULL'
 
     sql += default_column
+    sql += end
     colored_print(sql, 'YELLOW')
 
     q = input('Выполнить запрос? Y/n: ')
@@ -82,3 +86,4 @@ except OperationalError as e:
     db.execute_sql(sql)
 
     colored_print('Готово!', 'GREEN')
+
